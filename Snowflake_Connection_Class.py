@@ -5,8 +5,8 @@ from sqlalchemy import *
 
 class SnowFirst:
     sfAccount = 'ax60806.canada-central.azure'
-    sfUser = 'DHIRAJUTAGE'
-    sfPswd = 'Anita@2020'
+    sfUser = 'XXXXXXXX'
+    sfPswd = 'XXXXXX00'
 
     @staticmethod
     def test_db_connection():
