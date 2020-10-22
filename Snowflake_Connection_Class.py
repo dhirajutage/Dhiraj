@@ -4,7 +4,7 @@ from sqlalchemy import *
 
 
 class SnowFirst:
-    sfAccount = 'ax60806.canada-central.azure'
+    sfAccount = '00000.canada-central.azure'
     sfUser = 'XXXXXXXX'
     sfPswd = 'XXXXXX00'
 
