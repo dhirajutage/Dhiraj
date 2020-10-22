@@ -1,0 +1,30 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+# Write your code here
+class Movie:
+    def __init__(self,name,no,cost):
+        self.name = name
+        self.no   = no
+        self.cost = cost
+    
+    def __str__(self):
+        string = "Movie : {}\nNumber of Tickets : {}\nTotal Cost : {}".format(self.name,                        self.no,self.cost)
+        print(string)
+        
+        
+if __name__ == '__main__':
+    name = input()
+    n = int(input().strip())
+    cost = int(input().strip())
+    
+    p1 = Movie(name,n,cost)
+    print(p1)
+
