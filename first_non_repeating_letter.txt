@@ -1,0 +1,43 @@
+def first_non_repeating_letter(str):
+
+  counts = {}
+  order_of_char = []
+  #assertEqual(x, '')
+  if len(str) > 0:
+    for i in str.lower():
+      if i in counts:
+        counts[i] += 1
+      else:
+        counts[i] = 1
+        order_of_char.append(i)
+  else : #if string is empty
+    return ''
+  
+  # check the first no repeatating charater   
+  non_repeating_char = None
+  for j in   order_of_char:
+    
+    if counts[j] == 1:
+      non_repeating_char = j
+      break
+  #check for if all repeatating then reutn empty     
+  if not non_repeating_char:
+    return ""
+  
+  # get the actual case of no repeat character 
+  str_lower = str.lower()
+  indx = 0
+  for x in range(0,len(str_lower)):
+    if str_lower[x] ==  non_repeating_char:
+      indx = x
+  final_case_caharater = str[indx]
+  
+  return final_case_caharater
+  
+    
+  
+ 
+ # return None
+      
+      #print(j)
+      #break
